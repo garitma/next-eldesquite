@@ -87,69 +87,71 @@
 }
 
 :root {
-  /* Accent color scale */
-  --accent-1: #f3f0f0;
-  --accent-2: #f2ebea;
-  --accent-3: #f0dfdc;
-  --accent-4: #f5cfc9;
-  --accent-5: #f1c1b8;
-  --accent-6: #eab0a7;
-  --accent-7: #e09d92;
-  --accent-8: #d58376;
-  --accent-9: #b42318;
-  --accent-10: #a30601;
-  --accent-11: #b6261a;
-  --accent-12: #611d16;
+  color-scheme: dark;
 
-  --accent-a1: #ca4b2106;
-  --accent-a2: #c9350c0c;
-  --accent-a3: #cf2e091b;
-  --accent-a4: #ff000018;
-  --accent-a5: #e9290140;
-  --accent-a6: #d5200352;
-  --accent-a7: #c31f0368;
-  --accent-a8: #b91b0285;
+  /* Accent color scale — dark only */
+  --accent-1: #1a0f0e;
+  --accent-2: #271412;
+  --accent-3: #3d1a16;
+  --accent-4: #541e18;
+  --accent-5: #6b241c;
+  --accent-6: #8a2f24;
+  --accent-7: #a83a2c;
+  --accent-8: #c94a38;
+  --accent-9: #b42318;
+  --accent-10: #d63528;
+  --accent-11: #ffb6a8;
+  --accent-12: #ffcfc6;
+
+  --accent-a1: #f5310812;
+  --accent-a2: #f531081e;
+  --accent-a3: #ff3d2033;
+  --accent-a4: #ff4a2e47;
+  --accent-a5: #ff55385c;
+  --accent-a6: #ff634770;
+  --accent-a7: #ff6f5585;
+  --accent-a8: #ff7d6499;
   --accent-a9: #ad0d01e7;
-  --accent-a10: #a30500fe;
-  --accent-a11: #af0d00e4;
-  --accent-a12: #530901e9;
+  --accent-a10: #d63528fe;
+  --accent-a11: #ffb6a8;
+  --accent-a12: #ffcfc6;
 
   --accent-contrast: #fff;
-  --accent-surface: #f1e9e7cc;
+  --accent-surface: #3d1a1680;
   --accent-indicator: #b42318;
   --accent-track: #b42318;
 
-  /* Gray color scale */
-  --gray-1: #f0f1f1;
-  --gray-2: #ecedee;
-  --gray-3: #e1e3e6;
-  --gray-4: #d8dade;
-  --gray-5: #cfd2d7;
-  --gray-6: #c7cad0;
-  --gray-7: #bbbfc6;
-  --gray-8: #a6abb5;
-  --gray-9: #797e87;
-  --gray-10: #6f747c;
-  --gray-11: #53575d;
-  --gray-12: #1e2025;
+  /* Gray color scale — dark only */
+  --gray-1: #111113;
+  --gray-2: #18191b;
+  --gray-3: #212225;
+  --gray-4: #282a2e;
+  --gray-5: #2f3237;
+  --gray-6: #393c42;
+  --gray-7: #464a52;
+  --gray-8: #5e646e;
+  --gray-9: #6c717b;
+  --gray-10: #797e87;
+  --gray-11: #b0b4ba;
+  --gray-12: #eeeef0;
 
-  --gray-a1: #285b2a05;
-  --gray-a2: #122e2f09;
-  --gray-a3: #021c3614;
-  --gray-a4: #0718321e;
-  --gray-a5: #03163127;
-  --gray-a6: #05153130;
-  --gray-a7: #02132e3c;
-  --gray-a8: #01112e52;
-  --gray-a9: #000a1c81;
-  --gray-a10: #000a188b;
-  --gray-a11: #02080fa9;
-  --gray-a12: #000208e0;
+  --gray-a1: #00000000;
+  --gray-a2: #ffffff05;
+  --gray-a3: #ffffff0c;
+  --gray-a4: #ffffff12;
+  --gray-a5: #ffffff18;
+  --gray-a6: #ffffff22;
+  --gray-a7: #ffffff30;
+  --gray-a8: #ffffff45;
+  --gray-a9: #ffffff52;
+  --gray-a10: #ffffff60;
+  --gray-a11: #ffffff8f;
+  --gray-a12: #ffffffed;
 
   --gray-contrast: #ffffff;
-  --gray-surface: #ffffffcc;
-  --gray-indicator: #797e87;
-  --gray-track: #797e87;
+  --gray-surface: #18191b80;
+  --gray-indicator: #6c717b;
+  --gray-track: #6c717b;
 
   --primary: var(--accent-9);
   --primary-foreground: var(--accent-contrast);
@@ -165,7 +167,7 @@
 
   /* Aura Background & Text - Mapped to gray scale */
   --aura-bg: var(--gray-1);
-  --aura-text-primary: var(--accent-12);
+  --aura-text-primary: var(--gray-12);
   --aura-text-primary-inverse: var(--gray-contrast);
 
   --aura-accents-primary: var(--accent-9);
@@ -174,87 +176,19 @@
   /* Aura Component Tokens - Mapped to 12-step system */
   --aura-input-radius: 6.5px;
   --aura-button-radius: 6.5px;
-  --aura-input-bg: var(--accent-2);
+  --aura-input-bg: var(--gray-3);
   --aura-input-placeholder-color: var(--gray-11);
   --aura-radius: 0.5rem;
   --aura-opacity: 0.5;
   --aura-outline: var(--accent-9) solid 2px;
-  --aura-button-hover: var(--accent-11);
+  --aura-button-hover: var(--accent-10);
   --aura-link: var(--gray-12);
-  --aura-link-hover: var(--accent-2);
+  --aura-link-hover: var(--accent-3);
   --aura-selector: var(--accent-surface);
   --aura-loader: var(--primary);
   --aura-skeleton-start: var(--gray-8);
   --aura-skeleton-end: var(--gray-5);
   --radius: 0.5rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Accent color scale */
-    --accent-1: #fff0ee;
-    --accent-2: #f4ddd9;
-    --accent-3: #ffc7bc;
-    --accent-4: #ffb7a9;
-    --accent-5: #ffa899;
-    --accent-6: #ff9d8d;
-    --accent-7: #ff9c8b;
-    --accent-8: #ffa798;
-    --accent-9: #b42318;
-    --accent-10: #a30601;
-    --accent-11: #ffb6a8;
-    --accent-12: #ffcfc6;
-
-    --accent-a1: #fff0ee;
-    --accent-a2: #f531081e;
-    --accent-a3: #ffc7bc;
-    --accent-a4: #ffb7a9;
-    --accent-a5: #ffa899;
-    --accent-a6: #ff9d8d;
-    --accent-a7: #ff9c8b;
-    --accent-a8: #ffa798;
-    --accent-a9: #ad0d01e7;
-    --accent-a10: #a30500fe;
-    --accent-a11: #ffb6a8;
-    --accent-a12: #ffcfc6;
-
-    --accent-contrast: #fff;
-    --accent-surface: #f4c6be80;
-    --accent-indicator: #b42318;
-    --accent-track: #b42318;
-
-    /* Gray color scale */
-    --gray-1: #f3f4f6;
-    --gray-2: #e7e8ea;
-    --gray-3: #dcdee0;
-    --gray-4: #ced0d3;
-    --gray-5: #c0c2c6;
-    --gray-6: #b3b6bb;
-    --gray-7: #adb0b6;
-    --gray-8: #b2b7be;
-    --gray-9: #abafb6;
-    --gray-10: #a3a7ae;
-    --gray-11: #c7cad0;
-    --gray-12: #edeeef;
-
-    --gray-a1: #ebf4ff1a;
-    --gray-a2: #081a2d0e;
-    --gray-a3: #091d281a;
-    --gray-a4: #020f1c28;
-    --gray-a5: #030d1c37;
-    --gray-a6: #010c1c44;
-    --gray-a7: #030d1f4b;
-    --gray-a8: #01132a45;
-    --gray-a9: #0310254d;
-    --gray-a10: #010d2055;
-    --gray-a11: #05153130;
-    --gray-a12: #15353608;
-
-    --gray-contrast: #ffffff;
-    --gray-surface: rgba(0, 0, 0, 0.05);
-    --gray-indicator: #abafb6;
-    --gray-track: #abafb6;
-  }
 }
 
 @layer base {
@@ -276,10 +210,11 @@
   }
 
   .desquite-grain {
+    background-color: var(--gray-1);
     background-image:
       radial-gradient(ellipse 80% 60% at 20% 10%, var(--accent-a3), transparent 55%),
-      radial-gradient(ellipse 70% 50% at 90% 80%, var(--gray-a3), transparent 50%),
-      linear-gradient(165deg, var(--gray-1) 0%, var(--gray-2) 48%, var(--accent-2) 100%);
+      radial-gradient(ellipse 70% 50% at 90% 80%, var(--accent-a2), transparent 50%),
+      linear-gradient(165deg, var(--gray-1) 0%, var(--gray-2) 48%, var(--accent-1) 100%);
   }
 
   .desquite-fade-up {
