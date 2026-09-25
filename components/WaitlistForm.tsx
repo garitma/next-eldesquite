@@ -36,7 +36,7 @@ export function WaitlistForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="desquite-fade-up-delay-2 flex w-full max-w-md flex-col gap-1 sm:flex-row sm:items-stretch"
+      className="desquite-fade-up-delay-2 flex w-full max-w-md flex-col gap-1 sm:flex-row sm:items-center"
       noValidate
     >
       <label className="sr-only" htmlFor="waitlist-email">
@@ -51,10 +51,10 @@ export function WaitlistForm() {
         placeholder="tu@correo.com"
         value={email}
         onChange={(event) => setEmail(event.target.value)}
-        className="min-w-0 flex-1 border-0 bg-gray-3 px-2 text-gray-12 placeholder:text-gray-11 focus:outline focus:outline-2 focus:outline-accent-9"
+        className="h-4 min-w-0 flex-1 border-0 bg-gray-3 px-2 text-gray-12 placeholder:text-gray-11 focus:outline focus:outline-2 focus:outline-accent-9"
         disabled={status === "loading"}
       />
-      <Button type="submit" size="lg" isLoading={status === "loading"}>
+      <Button type="submit" size="md" isLoading={status === "loading"}>
         Unirme a la lista
       </Button>
     </form>
