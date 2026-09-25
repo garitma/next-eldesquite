@@ -35,8 +35,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="es"
       className={`${body.variable} ${display.variable} h-full antialiased`}
+      style={{ colorScheme: "dark" }}
     >
-      <body className={`${body.className} min-h-full flex flex-col text-gray-12`}>
+      <body
+        className={`${body.className} flex min-h-full flex-col bg-gray-1 text-gray-12`}
+      >
         {children}
       </body>
     </html>
