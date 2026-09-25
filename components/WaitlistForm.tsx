@@ -28,7 +28,7 @@ export function WaitlistForm() {
         role="status"
         aria-live="polite"
       >
-        Gracias. Te avisaremos cuando la obra esté lista.
+        quedamos a paz
       </p>
     );
   }

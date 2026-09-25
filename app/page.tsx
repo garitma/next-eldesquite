@@ -29,11 +29,18 @@ export default function Home() {
               className="desquite-rule h-[2px] w-12 bg-accent-9"
             />
 
-            <p className="desquite-fade-up-delay p max-w-xl text-pretty text-gray-11">
-              Textos que vuelven por lo que se les debe. Un proyecto literario
-              de Garitma, listo para publicar capítulos, fragmentos y
-              desquites.
-            </p>
+            <div className="desquite-fade-up-delay flex max-w-xl flex-col gap-1 text-pretty text-gray-11">
+              <p className="p m-0">
+                Las relaciones humanas son una transacción.
+              </p>
+              <p className="p m-0">
+                Quiero que sientas lo que yo sentí, porque si tenemos una
+                relación, tienes que sentir lo mismo que yo para que estemos a
+                paz.
+              </p>
+              <p className="p m-0">Somos una sociedad de desquites.</p>
+              <p className="p m-0 text-gray-12">– Amador</p>
+            </div>
 
             <div className="mt-1">
               <WaitlistForm />
